@@ -31,7 +31,7 @@ class AdminPanelProvider extends PanelProvider
             ->login(Login::class)
             ->favicon(asset('storage/sites/favicon.ico'))
             ->brandName(fn (GeneralSettings $settings) => $settings->brand_name)
-            ->brandLogo(asset('storage/sites/logo.png'))
+            ->brandLogo(asset('public/images/cerebro.png'))//(asset('storage/sites/logo.png'))
             ->brandLogoHeight(fn (GeneralSettings $settings) => $settings->brand_logoHeight)
             ->colors(fn (GeneralSettings $settings) => $settings->site_theme)
             ->databaseNotifications()->databaseNotificationsPolling('30s')
